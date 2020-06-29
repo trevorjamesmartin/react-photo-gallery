@@ -1,4 +1,6 @@
-* {
-  text-align: center;
-  background-color: #282c34;
+body {
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  background-color: #222831;
 }

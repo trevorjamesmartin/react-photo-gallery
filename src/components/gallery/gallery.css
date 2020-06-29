@@ -1,3 +1,29 @@
+.gallery-frame {
+  color: #ececec;
+  text-align: center;
+}
+
 .gallery {
-  background-color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #30475e;
+  color: #ececec;
+  width: 95vw;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.gallery-button {
+  margin: 0.5rem;
+  background-color: #f2a365;
+  color: #222831;
+  text-decoration: none;
+  border-radius: 0.2rem;
+}
+
+.gallery-controls {
+  display: flex;
+  justify-content: center;
 }
