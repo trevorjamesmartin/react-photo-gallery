@@ -53,6 +53,9 @@ const Gallery = ({ photos }) => {
             handleClick={cbSelectPhoto}
             isSelected={selectedPhoto.image === photo.image}
             isExpanded={selectedPhoto.click === 2}
+            clickState={
+              selectedPhoto.image === photo.image ? selectedPhoto.click : 0
+            }
           />
         ));
       setGalleryState({ ...galleryState, collection: updateGallery() });

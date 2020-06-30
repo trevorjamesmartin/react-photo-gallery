@@ -5,7 +5,7 @@ import "./photograph.css";
  * @param {*} image image file / url
  * @param {*} desc description of photograph
  */
-const Photograph = ({ image, desc, handleClick, isSelected }) => {
+const Photograph = ({ image, desc, handleClick, isSelected, clickState }) => {
   const [photoState, setPhotoState] = useState({
     hover: false,
     image,
@@ -15,7 +15,7 @@ const Photograph = ({ image, desc, handleClick, isSelected }) => {
     <img
       className={`photograph${photoState.hover ? "-hover" : ""}${
         isSelected ? " photograph-select" : ""
-      }`}
+      }${clickState === 2 ? " photograph-maximized" : ""}`}
       src={image}
       alt={desc}
       onMouseOver={() => setPhotoState({ ...photoState, hover: true })}
